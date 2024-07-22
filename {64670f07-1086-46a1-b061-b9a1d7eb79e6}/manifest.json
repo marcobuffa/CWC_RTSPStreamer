@@ -1,0 +1,42 @@
+{
+  "mver": "1.2.0",
+  "control": {
+    "identity": {
+      "name": "RTSPMediaPlayer",
+      "version": "1.0",
+      "displayname": "RTSPMediaPlayer",
+      "icon": "./assets/rtsp.png",
+      "type": "guid://64670f07-1086-46a1-b061-b9a1d7eb79e6",
+      "start": "./control/index.html"
+    },
+    "environment": {
+      "extensions": {
+        "HMI": {
+          "mandatory": true,
+          "version": "~1.0.0"
+        }
+      }
+    },
+    "metadata": {
+      "author": "Marco Buffa"
+    },
+    "contracts": {
+      "api": {
+        "methods": {},
+        "events": {},
+        "properties": {
+          "MediaRTSPPath":{
+            "type": "string",
+            "default": "rtsp://192.168.0.100:8554/mystream"
+          },
+          "EdgeServerAddress":{
+            "type": "string",
+            "default": "127.0.0.1"
+          }
+        }
+      }
+    },
+    "types": {}
+  }
+}
+  
