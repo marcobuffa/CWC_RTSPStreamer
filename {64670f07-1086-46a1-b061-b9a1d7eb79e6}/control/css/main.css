@@ -4,6 +4,11 @@ body {
   overflow: hidden;
 }
 
-.video > * {
+#video-div {
   width: 100%;
 }
+
+#video-canvas {
+  width: 100%;
+}
+
